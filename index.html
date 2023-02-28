@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TETRIS</title>
+</head>
+
+<body>
+  <section class="game-content">
+    <h1 class="title">TETRIS</h1>
+    <div class="game-content__inner">
+      <div class="canvas-bg">
+        <canvas id="game" width="320px" height="640px"></canvas>
+      </div>
+      <div class="game-content__info">
+        <div class="game-content__next">
+          <span class="title-next">Next</span>
+          <div class="next__iner">
+            <div class="tetromino">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="game-content__score">
+              <span class="title-score">Next</span>
+              <span class="total-score">0</span>
+
+            </div>
+            <div class="game-content__btn">
+              <button class="sketch-btn start">start</button>
+              <button class="sketch-btn pause">pause</button>
+              <button class="sketch-btn restart">restart</button>
+            </div>
+            <div class="game-controls">
+              <button class="sketch-btn top">
+                <span>
+                  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                  </svg>
+                </span>
+              </button>
+              <button class="sketch-btn bottom">
+                <span>
+                  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                  </svg>
+                </span>
+              </button>
+              <button class="sketch-btn left">
+                <span>
+                  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                  </svg>
+                </span>
+              </button>
+              <button class="sketch-btn right">
+                <span>
+                  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-menu">
+      <span class="title-menu">сложность</span>
+      <button class="sketch-btn easy">лугко</button>
+      <button class="sketch-btn norm">норм</button>
+      <button class="sketch-btn hard">сложно</button>
+    </div>
+  </section>
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
